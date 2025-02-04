@@ -21,9 +21,12 @@ body {
     max-width: 800px;
 }
 
-.hero-image {
-    max-width: 100%;
-    height: auto;
+.hero h1 {
+    font-family: 'a_CityNovaTitulStars', sans-serif;
+    font-size: 4em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .container {
