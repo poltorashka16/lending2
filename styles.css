@@ -19,18 +19,11 @@ body {
 
 .hero-content {
     max-width: 800px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.hero h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 4em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin: 10px 0 0;
+.hero-image {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -83,15 +76,37 @@ input[type="text"], input[type="email"] {
     color: #fff;
 }
 
-select {
-    width: 100%;
+.family-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.family-options input[type="radio"] {
+    display: none;
+}
+
+.family-options label {
     padding: 8px;
-    margin-bottom: 10px;
     border: 1px solid #444;
     border-radius: 5px;
     font-size: 1em;
     background-color: #222;
     color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.family-options label:hover {
+    background-color: #333;
+}
+
+.family-options input[type="radio"]:checked + label {
+    background-color: #555;
+}
+
+.family-options input[type="radio"]:not(:checked) + label {
+    opacity: 0.5;
 }
 
 input[type="submit"] {
