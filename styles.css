@@ -1,48 +1,134 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>НЕчайная история</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Детективная Квест-вечеринка</h1>
-        </div>
-    </div>
+@font-face {
+    font-family: 'a_CityNovaTitulStars';
+    src: url('fonts/a_CityNovaTitulStars.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    <div class="container">
-        <div class="content">
-            <p><strong>Добро пожаловать в старый особняк графа Фридриха!</strong></p>
-            <p>Хозяин приглашает родных и друзей на вечернее чаепитие. Но чем может закончиться вечер, полный чая и сладостей?</p>
-            <p>Приготовьтесь к захватывающему вечеру, полному интриг и неожиданных поворотов.</p>
-            <p>Граф Фридрих в день своего рождения собирает на изысканный ужин своих родных и друзей, 3 семьи: Греи, Гастингсы и Йорки. Но вечер, полный чая и сладостей, резко оборачивается трагедией, когда граф оказывается отравленным! В панике и недоумении, собравшиеся гости понимают, что среди них скрывается убийца. У каждого участника есть свои мотивы и тайны, и только ваша находчивость поможет выяснить, кто на самом деле желал графу смерти.</p>
-        </div>
-        <div class="image-container">
-            <img src="path/to/your/image.jpg" alt="Старый особняк графа Фридриха">
-        </div>
-        <form id="registrationForm" action="submit_form.php" method="post">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
 
-            <label for="email">Электронная почта:</label>
-            <input type="email" id="email" name="email" required>
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-            <label for="family">Выберите семью:</label>
-            <div class="family-options">
-                <input type="radio" id="grei" name="family" value="Греи" required>
-                <label for="grei">Греи</label>
-                <input type="radio" id="gastings" name="family" value="Гастингсы" required>
-                <label for="gastings">Гастингсы</label>
-                <input type="radio" id="yorki" name="family" value="Йорки" required>
-                <label for="yorki">Йорки</label>
-            </div>
+.hero-content {
+    max-width: 800px;
+}
 
-            <input type="submit" value="Подать заявку">
-        </form>
-    </div>
-    <script src="scripts.js"></script>
-</body>
-</html>
+.hero h1 {
+    font-family: 'a_CityNovaTitulStars', sans-serif;
+    font-size: 4em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Темно-черный цвет */
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+}
+
+.family-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.family-options input[type="radio"] {
+    display: none;
+}
+
+.family-options label {
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.family-options label:hover {
+    background-color: #333;
+}
+
+.family-options input[type="radio"]:checked + label {
+    background-color: #555;
+}
+
+.family-options input[type="radio"]:not(:checked) + label {
+    opacity: 0.5;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
