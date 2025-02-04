@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('registrationForm');
+    const familyOptions = document.querySelectorAll('.family-options input[type="radio"]');
 
     form.addEventListener('submit', function(event) {
         // Проверка, чтобы все обязательные поля были заполнены
@@ -10,5 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
             // Можно добавить дополнительную логику, например, отправку данных на сервер
             console.log('Форма успешно отправлена');
         }
+    });
+
+    familyOptions.forEach(option => {
+        option.addEventListener('change', function() {
+            familyOptions.forEach(opt => {
+                if (opt !== this) {
+                    opt.nextElementSibling.style.opacity = '0.5';
+                } else {
+                    opt.nextElementSibling.style.opacity = '1';
+                }
+            });
+        });
     });
 });
