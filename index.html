@@ -10,7 +10,8 @@
 <body>
     <div class="hero">
         <div class="hero-content">
-            <h1>Лох</h1>
+            <h1>НЕчайная история</h1>
+            <p>Под детективы</p>
         </div>
     </div>
 
@@ -32,12 +33,14 @@
             <input type="email" id="email" name="email" required>
 
             <label for="family">Выберите семью:</label>
-            <select id="family" name="family" required>
-                <option value="">Выберите семью</option>
-                <option value="Греи">Греи</option>
-                <option value="Гастингсы">Гастингсы</option>
-                <option value="Йорки">Йорки</option>
-            </select>
+            <div class="family-options">
+                <input type="radio" id="grei" name="family" value="Греи" required>
+                <label for="grei">Греи</label>
+                <input type="radio" id="gastings" name="family" value="Гастингсы" required>
+                <label for="gastings">Гастингсы</label>
+                <input type="radio" id="yorki" name="family" value="Йорки" required>
+                <label for="yorki">Йорки</label>
+            </div>
 
             <input type="submit" value="Подать заявку">
         </form>
