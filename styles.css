@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'a_CityNovaTitulStars';
-    src: url('fonts/a_CityNovaTitulStars.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -19,7 +12,6 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-image: url('https://cdn.qwenlm.ai/output/89be4ac2-7cdf-41a1-87a6-a489574194e2/t2i/3fd4b3b6-d366-4e02-acb9-2c64a3c44dc9/539694a1-b356-467d-9891-45d29a7e417d.png');
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -29,12 +21,9 @@ body {
     max-width: 800px;
 }
 
-.hero h1 {
-    font-family: 'a_CityNovaTitulStars', sans-serif;
-    font-size: 4em;
-    margin: 0;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+.hero-image {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
