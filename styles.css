@@ -15,15 +15,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero-content {
     max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .container {
