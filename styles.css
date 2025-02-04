@@ -19,6 +19,7 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    background-image: url('https://cdn.qwenlm.ai/output/89be4ac2-7cdf-41a1-87a6-a489574194e2/t2i/3fd4b3b6-d366-4e02-acb9-2c64a3c44dc9/539694a1-b356-467d-9891-45d29a7e417d.png');
     justify-content: center;
     align-items: center;
     text-align: center;
