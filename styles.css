@@ -8,6 +8,7 @@ body {
 }
 
 .hero {
+    font-family: 'a_CityNovaTitulStars', sans-serif;
     position: relative;
     width: 100%;
     height: 100vh;
