@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НЕчайная история</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>НЕчайная история</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <p><strong>Добро пожаловать в старый особняк графа Фридриха!</strong></p>
+            <p>Хозяин приглашает родных и друзей на вечернее чаепитие. Но чем может закончиться вечер, полный чая и сладостей?</p>
+            <p>Приготовьтесь к захватывающему вечеру, полному интриг и неожиданных поворотов.</p>
+            <p>Граф Фридрих в день своего рождения собирает на изысканный ужин своих родных и друзей, 3 семьи: Греи, Гастингсы и Йорки. Но вечер, полный чая и сладостей, резко оборачивается трагедией, когда граф оказывается отравленным! В панике и недоумении, собравшиеся гости понимают, что среди них скрывается убийца. У каждого участника есть свои мотивы и тайны, и только ваша находчивость поможет выяснить, кто на самом деле желал графу смерти.</p>
+        </div>
+        <div class="image-container">
+            <img src="path/to/your/image.jpg" alt="Старый особняк графа Фридриха">
+        </div>
+        <form id="registrationForm" action="submit_form.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="family">Выберите семью:</label>
+            <select id="family" name="family" required>
+                <option value="">Выберите семью</option>
+                <option value="Греи">Греи</option>
+                <option value="Гастингсы">Гастингсы</option>
+                <option value="Йорки">Йорки</option>
+            </select>
+
+            <input type="submit" value="Подать заявку">
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
