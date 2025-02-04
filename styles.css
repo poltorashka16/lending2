@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'a_CityNovaTitulStars';
+    src: url('fonts/a_CityNovaTitulStars.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,7 +15,6 @@ body {
 }
 
 .hero {
-    font-family: 'a_CityNovaTitulStars', sans-serif;
     position: relative;
     width: 100%;
     height: 100vh;
