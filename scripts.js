@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const contentBlocks = document.querySelectorAll('.animate-fade');
+
+    function checkVisibility() {
+        contentBlocks.forEach(block => {
+            const rect = block.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                block.classList.add('active');
+            } else {
+                block.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+    checkVisibility(); // Проверка при загрузке страницы
+
     const form = document.getElementById('registrationForm');
     const familyOptions = document.querySelectorAll('.family-options input[type="radio"]');
 
