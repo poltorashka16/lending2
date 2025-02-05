@@ -25,8 +25,26 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             alert('Пожалуйста, заполните все обязательные поля.');
         } else {
-            // Переход на указанную ссылку
-            window.location.href = 'https://poltorashka16.github.io/neveroyatno/';
+            // Отправка формы на указанный URL
+            fetch(form.action, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(new FormData(form))
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Переход на указанную ссылку после успешной отправки формы
+                    window.location.href = 'https://poltorashka16.github.io/neveroyatno/';
+                } else {
+                    throw new Error('Ошибка при отправке формы');
+                }
+            })
+            .catch(error => {
+                alert('Произошла ошибка при отправке формы. Попробуйте еще раз.');
+                console.error(error);
+            });
             event.preventDefault(); // Предотвращаем стандартную отправку формы
         }
     });
