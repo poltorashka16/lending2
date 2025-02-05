@@ -32,7 +32,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1a1a1a; /* Темно-черный цвет */
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -79,7 +78,7 @@ body {
 
 .image-container {
     text-align: center;
-    margin: 20px 0;
+    margin: 120px 0;
 }
 
 .image-row {
@@ -217,7 +216,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-
+    background-color: #ff0000;
     border-color: #ff0000;
     box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+}
+
+.gogo {
+    text-align: center;
+    margin: 20px 0;
 }
