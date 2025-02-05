@@ -14,33 +14,37 @@
     </div>
 
     <div class="container">
-        <div class="content neon-border">
-            <p><strong>Добро пожаловать в старый особняк графа Фридриха!</strong></p>
-            <p>Хозяин приглашает родных и друзей на вечернее чаепитие. Но чем может закончиться вечер, полный чая и сладостей?</p>
-            <p>Приготовьтесь к захватывающему вечеру, полному интриг и неожиданных поворотов.</p>
-            <p>Граф Фридрих в день своего рождения собирает на изысканный ужин своих родных и друзей, 3 семьи: Греи, Гастингсы и Йорки. Но вечер, полный чая и сладостей, резко оборачивается трагедией, когда граф оказывается отравленным! В панике и недоумении, собравшиеся гости понимают, что среди них скрывается убийца. У каждого участника есть свои мотивы и тайны, и только ваша находчивость поможет выяснить, кто на самом деле желал графу смерти.</p>
+        <div class="content neon-border" id="animated-content">
+            <p class="animate-fade"><strong>Добро пожаловать в старый особняк графа Фридриха!</strong></p>
+            <p class="animate-fade">Хозяин приглашает родных и друзей на вечернее чаепитие. Но чем может закончиться вечер, полный чая и сладостей?</p>
+            <p class="animate-fade">Приготовьтесь к захватывающему вечеру, полному интриг и неожиданных поворотов.</p>
+            <p class="animate-fade">Граф Фридрих в день своего рождения собирает на изысканный ужин своих родных и друзей, 3 семьи: Греи, Гастингсы и Йорки. Но вечер, полный чая и сладостей, резко оборачивается трагедией, когда граф оказывается отравленным! В панике и недоумении, собравшиеся гости понимают, что среди них скрывается убийца. У каждого участника есть свои мотивы и тайны, и только ваша находчивость поможет выяснить, кто на самом деле желал графу смерти.</p>
         </div>
         <div class="image-container">
-            <img src="path/to/your/image.jpg" alt="Старый особняк графа Фридриха">
+            <div class="image-row">
+                <img src="https://i.ibb.co/B2PCBjXS/74120dc5-bb89-4f23-a540-828cf6c70a81.png" alt="Изображение 2" class="neon-image wider-image">
+                <img src="https://i.ibb.co/93mTz8B5/62559ef5-41d9-4da8-9fd4-acda26c143ba.png" alt="Изображение 3" class="neon-image wider-image">
+            </div>
+            <div class="gogo">
+                <p class="animate-fade"><strong>Оставь заявку</strong></p>
+            </div>
         </div>
         <form id="registrationForm" action="submit_form.php" method="post">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Электронная почта:</label>
-            <input type="email" id="email" name="email" required>
-
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Имя" required class="neon-input">
+                <input type="email" id="email" name="email" placeholder="Электронная почта" required class="neon-input">
+            </div>
             <label for="family">Выберите семью:</label>
             <div class="family-options">
                 <input type="radio" id="grei" name="family" value="Греи" required>
-                <label for="grei">Греи</label>
+                <label for="grei" class="neon-label">Греи</label>
                 <input type="radio" id="gastings" name="family" value="Гастингсы" required>
-                <label for="gastings">Гастингсы</label>
+                <label for="gastings" class="neon-label">Гастингсы</label>
                 <input type="radio" id="yorki" name="family" value="Йорки" required>
-                <label for="yorki">Йорки</label>
+                <label for="yorki" class="neon-label">Йорки</label>
             </div>
 
-            <input type="submit" value="Подать заявку">
+            <input type="submit" value="Подать заявку" class="neon-button">
         </form>
     </div>
     <script src="scripts.js"></script>
