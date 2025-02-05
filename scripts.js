@@ -25,8 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             alert('Пожалуйста, заполните все обязательные поля.');
         } else {
-            // Можно добавить дополнительную логику, например, отправку данных на сервер
-            console.log('Форма успешно отправлена');
+            // Переход на указанную ссылку
+            window.location.href = 'https://poltorashka16.github.io/neveroyatno/';
+            event.preventDefault(); // Предотвращаем стандартную отправку формы
         }
     });
 
